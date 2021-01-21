@@ -11,5 +11,5 @@ pattern=$1
 
 :ls |
 grep -F "$pattern" |
-fzf --preview "bat --style=numbers --color=always --line-range :$FZF_PREVIEW_LINES {}" |
+fzf --preview "bat --style=numbers --color=always --line-range :50 {}" |
 :buffer
